@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     public int KItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k)
     {

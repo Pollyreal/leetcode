@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     public IList<IList<int>> ReconstructMatrix(int upper, int lower, int[] colsum)
     {

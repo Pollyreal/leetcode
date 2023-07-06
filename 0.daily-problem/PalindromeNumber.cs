@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     // palindrome-number
     bool IsPalindrome(int x)

@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     // 没答出来
     public bool CheckSubarraySum(int[] nums, int k)

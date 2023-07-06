@@ -1,5 +1,5 @@
 
-public partial class Solution
+public partial class DailyProblemSolution
 {
     // https://leetcode.cn/problems/minimum-window-substring/
     // string MinWindow(string s, string t)

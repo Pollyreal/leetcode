@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     // distinct subseqII
     int DistinctSubseqII(string s)

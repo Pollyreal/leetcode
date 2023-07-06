@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 // NC27 集合的所有子集(一)
 // 复杂度太高，需用位运算优化
-partial class Solution
+partial class DailyProblemSolution
 {
     /**
      * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可

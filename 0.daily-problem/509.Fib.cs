@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     // 递归法：代码少 效率低
     // public int Fib1(int n)

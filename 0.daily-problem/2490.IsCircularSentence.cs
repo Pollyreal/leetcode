@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     public bool IsCircularSentence(string sentence)
     {

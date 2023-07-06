@@ -1,4 +1,4 @@
-public partial class Solution
+public partial class DailyProblemSolution
 {
     // https://leetcode.cn/problems/longest-common-subsequence/
     int LongestCommonSubsequence(String text1, String text2)
