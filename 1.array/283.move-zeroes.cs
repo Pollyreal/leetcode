@@ -25,8 +25,9 @@ public partial class ArraySolution
         nums = nums.Take(new Range(len - 1, 2 * len - 1)).ToArray();
     }
 
-    public void MoveZeroes(int[] nums)
+    public void MoveZeroes2(int[] nums)
     {
+        // 此解法时间复杂度大于O(n)
         var len = nums.Length;
         var zeroCount = 0;
         for (int i = 0, j = 0; i < len; i++, j++)
@@ -42,6 +43,23 @@ public partial class ArraySolution
                 zeroCount++;
             }
             nums[i] = nums[j];
+        }
+    }
+
+    public void MoveZeroes(int[] nums)
+    {
+        // 尝试一次遍历
+        var len = nums.Length;
+        var j = 0;
+        for (int i = 0; i < len; i++)
+        {
+            if (nums[i] != 0)
+            {
+                var temp = nums[j];
+                nums[j] = nums[i];
+                nums[i] = temp;
+                j++;
+            }
         }
     }
 }
