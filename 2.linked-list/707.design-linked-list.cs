@@ -107,3 +107,116 @@ public class MyShitLinkedList
  * obj.AddAtIndex(index,val);
  * obj.DeleteAtIndex(index);
  */
+
+// Wrong answer - 错误解
+public class MyLinkedList
+{
+    private int size;
+    private ListNode linkedList;
+    public MyLinkedList()
+    {
+        size = 0;
+        linkedList = new ListNode(0);
+    }
+
+    public int Get(int index)
+    {
+        if (index > size - 1 || index < 0)
+        {
+            return -1;
+        }
+        ListNode current;
+        current = linkedList.next;
+        if (index == 0)
+        {
+            return current.val;
+        }
+        for (int i = 1; i < size; i++)
+        {
+            current = current.next;
+            if (i == index)
+            {
+                return current.val;
+            }
+        }
+        return -1;
+    }
+
+    public void AddAtHead(int val)
+    {
+        AddAtIndex(0, val);
+    }
+
+    public void AddAtTail(int val)
+    {
+        AddAtIndex(size, val);
+    }
+
+    public void AddAtIndex(int index, int val)
+    {
+        if (index > size || index < 0)
+        {
+            return;
+        }
+        var newNode = new ListNode(val);
+        ListNode current;
+        current = linkedList.next;
+        if (index == 0)
+        {
+            newNode.next = current;
+            linkedList.next = newNode;
+            size++;
+            return;
+        }
+        for (int i = 1; i < size; i++)
+        {
+            current = current.next;
+            if (i == index - 1)
+            {
+                var temp = current.next;
+                current.next = newNode;
+                newNode.next = temp;
+                size++;
+                return;
+            }
+        }
+    }
+
+    public void DeleteAtIndex(int index)
+    {
+        if (index > size - 1 || index < 0)
+        {
+            return;
+        }
+        ListNode current;
+        current = linkedList.next;
+        if (index == 0)
+        {
+            var temp = current.next?.next;
+            linkedList.next = temp;
+            size--;
+            return;
+        }
+        for (int i = 1; i < size; i++)
+        {
+            current = current.next;
+            if (i == index - 1)
+            {
+                var temp = current.next?.next;
+                current.next = temp;
+                size--;
+                return;
+            }
+        }
+    }
+}
+
+public class ListNode
+{
+    public int val;
+    public ListNode next;
+    public ListNode(int value)
+    {
+        val = value;
+    }
+}
