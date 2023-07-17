@@ -18,5 +18,6 @@ else
 // var res = new DailyProblemSolution().IsCircularSentence("I like Leetcode");
 // Console.WriteLine(res);
 
-Console.WriteLine(await new LearnSolution().RetrieveDocsHomePage());
-Console.WriteLine(new LearnSolution().TestPatternMatch("Hello"));
+// Console.WriteLine(await new LearnSolution().RetrieveDocsHomePage());
+// Console.WriteLine(new LearnSolution().TestPatternMatch("Hello"));
+Console.WriteLine(new NumberAndPlaceValueSolution().Multiply("299999","33"));

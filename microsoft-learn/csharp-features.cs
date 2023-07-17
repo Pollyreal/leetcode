@@ -40,7 +40,7 @@ public class LearnSolution
     public void NewOperator()
     {
         // 简洁形式
-        var instance2 = new ExampleClass();
+        var instance2 = new LearnSolution();
         // since c# 9.0
         LearnSolution instance1 = new();
     }
