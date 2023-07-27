@@ -20,5 +20,6 @@ else
 
 // Console.WriteLine(await new LearnSolution().RetrieveDocsHomePage());
 // Console.WriteLine(new LearnSolution().TestPatternMatch("Hello"));
-Console.WriteLine(new NumberAndPlaceValueSolution().Multiply("299999", "33"));
-Console.WriteLine(new HashTableSolution().LongestConsecutive(new int[] { 1, 2, 3, 4, 5 ,9}));
+// Console.WriteLine(new NumberAndPlaceValueSolution().Multiply("299999", "33"));
+// Console.WriteLine(new HashTableSolution().LongestConsecutive(new int[] { 1, 2, 3, 4, 5 ,9}));
+Console.WriteLine(new GreedySolution().MaxProfit(new int []{1,2}));
