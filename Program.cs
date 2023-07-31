@@ -22,4 +22,7 @@ else
 // Console.WriteLine(new LearnSolution().TestPatternMatch("Hello"));
 // Console.WriteLine(new NumberAndPlaceValueSolution().Multiply("299999", "33"));
 // Console.WriteLine(new HashTableSolution().LongestConsecutive(new int[] { 1, 2, 3, 4, 5 ,9}));
-Console.WriteLine(new GreedySolution().MaxProfit(new int []{1,2}));
+// Console.WriteLine(new GreedySolution().MaxProfit(new int []{1,2}));
+
+var res = new BisectionSearchSolution().SearchRange(new int[] { 2, 2 }, 4);
+Console.WriteLine("{0}-{1}", res[0], res[1]);
